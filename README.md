@@ -18,3 +18,4 @@ ok
 hi
 hello
 good
+hi
