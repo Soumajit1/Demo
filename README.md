@@ -50,3 +50,4 @@ GOOD
 hi
 hello
 okey
+allright
