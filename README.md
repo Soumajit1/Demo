@@ -24,3 +24,4 @@ okey
 good
 all good
 great
+thank you
