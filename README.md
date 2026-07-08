@@ -2,7 +2,6 @@ class Solution {
  public:
   vector<vector<int>> merge(vector<vector<int>>& intervals) {
     vector<vector<int>> ans;
-
     ranges::sort(intervals);
     for (const vector<int>& interval : intervals)
       if (ans.empty() || ans.back()[1] < interval[0])
