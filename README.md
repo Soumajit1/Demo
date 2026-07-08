@@ -9,6 +9,6 @@ class Solution {
       else
         ans.back()[1] = max(ans.back()[1], interval[1]);
 
-    return ans;
+    return ans
   }
 };
