@@ -9,5 +9,4 @@ public:
             }
         }
         return f[n];
-    }
-};
+
