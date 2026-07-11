@@ -1,9 +1,1 @@
-class Solution {
-public:
-    int numTrees(int n) {
-        vector<int> f(n + 1);
-        f[0] = 1; - 1];
-            }
-        }
-        return f[n];
 
