@@ -20,7 +20,7 @@
 
 	        LEFT_WALL = -1
 
-	 
+	
 
 	        while len(ans) != m*n:
 
