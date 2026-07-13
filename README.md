@@ -13,7 +13,6 @@
 	        direction = RIGHT
 
 	 
-
 	        UP_WALL = 0
 
 	        RIGHT_WALL = n
