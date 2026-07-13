@@ -1,90 +1,36 @@
-	class Solution:
+class Solution {
+ public:
+  void solveSudoku(vector<vector<char>>& board) {
+    solve(board, 0);
+  }
 
-	    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+ private:
+  bool solve(vector<vector<char>>& board, int s) {
+    if (s == 81)
+      return true;
 
-	        m, n = len(matrix), len(matrix[0])
+    const int i = s / 9;
+    const int j = s % 9;
 
-	        ans = []
+    if (board[i][j] != '.')
+      return solve(board, s + 1);
 
-	        i, j = 0, 0
-	        UP, RIGHT, DOWN, LEFT = 0, 1, 2, 3
+    for (char c = '1'; c <= '9'; ++c)
+      if (isValid(board, i, j, c)) {
+        board[i][j] = c;
+        if (solve(board, s + 1))
+          return true;
+        board[i][j] = '.';
+      }
 
-	        direction = RIGHT
-	 
-	        UP_WALL = 0
+    return false;
+  }
 
-	        RIGHT_WALL = n
-
-	        DOWN_WALL = m
-
-	        LEFT_WALL = -1
-
-	
-
-	        while len(ans) != m*n:
-
-	            if direction == RIGHT:
-
-	                while j < RIGHT_WALL:
-
-	                    ans.append(matrix[i][j])
-
-	                    j += 1
-
-	                i, j = i+1, j-1
-
-	                RIGHT_WALL -= 1
-
-	                direction = DOWN
-
-	            elif direction == DOWN:
-
-	                while i < DOWN_WALL:
-
-	                    ans.append(matrix[i][j])
-
-	                    i += 1
-
-	                i, j = i-1, j-1
-
-	                DOWN_WALL -= 1
-
-	                direction = LEFT
-
-	            elif direction == LEFT:
-
-	                while j > LEFT_WALL:
-
-	                    ans.append(matrix[i][j])
-
-	                    j -= 1
-
-	                i, j = i-1, j+1
-
-	                LEFT_WALL += 1
-
-	                direction = UP
-
-	            else:
-
-	                while i > UP_WALL:
-
-	                    ans.append(matrix[i][j])
-
-	                    i -= 1
-
-	                i, j = i+1, j+1
-
-	                UP_WALL += 1
-
-	                direction = RIGHT
-
-	        
-
-	        return ans 
-
-	        # Time: O(m*n) 
-
-	        # Space: O(1)
-
-	 
+  bool isValid(vector<vector<char>>& board, int row, int col, char c) {
+    for (int i = 0; i < 9; ++i)
+      if (board[i][col] == c || board[row][i] == c ||
+          board[3 * (row / 3) + i / 3][3 * (col / 3) + i % 3] == c)
+        return false;
+    return true;
+  }
+};
