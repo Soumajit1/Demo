@@ -7,7 +7,6 @@
 	        ans = []
 
 	        i, j = 0, 0
-
 	        UP, RIGHT, DOWN, LEFT = 0, 1, 2, 3
 
 	        direction = RIGHT
