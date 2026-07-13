@@ -10,7 +10,6 @@
 	        UP, RIGHT, DOWN, LEFT = 0, 1, 2, 3
 
 	        direction = RIGHT
-
 	 
 	        UP_WALL = 0
 
