@@ -13,7 +13,7 @@ class Solution {
     if (board[i][j] != '.')
       return solve(board, s + 1);
 
-    for (char c = '1'; c <= '9'; ++c)
+   for (char c = '1'; c <= '9'; ++c)
       if (isValid(board, i, j, c)) {
         board[i][j] = c;
         if (solve(board, s + 1))
