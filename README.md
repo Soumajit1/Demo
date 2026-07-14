@@ -8,7 +8,6 @@ class Solution {
   bool solve(vector<vector<char>>& board, int s) {
     if (s == 81)
       return true;
-
     const int i = s / 9;
     const int j = s % 9;
 
