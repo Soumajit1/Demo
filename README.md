@@ -10,7 +10,6 @@ class Solution {
       return true;
     const int i = s / 9;
     const int j = s % 9;
-
     if (board[i][j] != '.')
       return solve(board, s + 1);
 
