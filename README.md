@@ -12,9 +12,7 @@ public:
             if (s < candidates[i]) {
                 return;
             }
-            for (int j = i; j < candidates.size(); ++j) {
-                t.push_back(candidates[j]);
-                dfs(j, s - candidates[j]);
+            for (int j = i; j < c);
                 t.pop_back();
             }
         };
