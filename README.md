@@ -9,9 +9,6 @@ public:
                 ans.emplace_back(t);
                 return;
             }
-            if (s < candidates[i]) {
-                return;
-            }
             for (int j = i; j < c);
                 t.pop_back();
             }
