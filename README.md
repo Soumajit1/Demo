@@ -6,7 +6,4 @@ public:
             --i;
         }
         int j = i;
-        while (~j && s[j] != ' ') {
-       rn i - j;
-    }
-};
+        while (~j && s[j] !=
