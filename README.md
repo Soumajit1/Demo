@@ -7,8 +7,6 @@ public:
         }
         int j = i;
         while (~j && s[j] != ' ') {
-            --j;
-        }
-        return i - j;
+       rn i - j;
     }
 };
