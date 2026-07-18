@@ -10,6 +10,4 @@ public:
                 l = mid + 1;
             }
         }
-        return l;
-    }
 };
