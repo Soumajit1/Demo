@@ -30,7 +30,7 @@ public:
             fast = fast->next;
         }
         while (fast->next) {
-            fast = fast->next;
+      fast = fast->next;
             slow = slow->next;
         }
         ListNode* ans = slow->next;
