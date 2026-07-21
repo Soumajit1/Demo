@@ -1,6 +1,6 @@
 /**
  * Definition for singly-linked list.
- * struct ListNode {
+  struct ListNode {
      int val;
       stNode *next;
    ListNode() : val(0), next(nullptr) {}
