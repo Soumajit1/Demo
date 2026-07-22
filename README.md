@@ -8,9 +8,6 @@
         if (!head || !head->next) {
             return head;
         }
-        ListNode* cur = head;
-        int n = 0;
-        while (cur) {
             ++n;
             cur = cur->next;
         }
