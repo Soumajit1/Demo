@@ -7,8 +7,6 @@
     ListNode* rotateRight(ListNode* head, int k) {
         if (!head || !head->next) {
             return head;
-        }
-            ++n;
             cur = cur->next;
         }
         k %= n;
