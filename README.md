@@ -3,11 +3,7 @@
   struct ListNode {
      int val;
       stNode *next;
-   ListNode() : val(0),next) : val(x), next(next) {}
- * };
- */
-class Solution {
-public:
+   ListNode() : va
     ListNode* rotateRight(ListNode* head, int k) {
         if (!head || !head->next) {
             return head;
