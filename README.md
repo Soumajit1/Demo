@@ -1,13 +1,12 @@
-/**
- * Definition for singly-linked list.
-  struct ListNode {
-     int val;
-      stNode *next;
-   ListNode() : va
-    ListNode* rotat
-        while (k--) {
-            fast = fast->next;
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        int k = 0;
+        for (int x : nums) {
+            if (k == 0 || x != nums[k - 1]) {
+                nums[k++] = x;
+            }
         }
-        return ans;
+        return k;
     }
 };
