@@ -4,11 +4,7 @@
      int val;
       stNode *next;
    ListNode() : va
-    ListNode* rotateRight(ListNode* head, int k) {
-        if (!head || !head->next) 
-        }
-        ListNode* fast = head;
-        ListNode* slow = head;
+    ListNode* rotat
         while (k--) {
             fast = fast->next;
         }
