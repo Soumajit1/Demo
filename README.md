@@ -7,6 +7,4 @@ public:
                 nums[k++] = x;
             }
         }
-        return k;
-    }
-};
+        ret
