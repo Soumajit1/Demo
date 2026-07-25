@@ -7,10 +7,3 @@
  *     ListNode(int x) : val(x), next(nullptr) {}
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
- */
-        } else {
-            list2->next = mergeTwoLists(list1, list2->next);
-            return list2;
-        }
-    }
-};
