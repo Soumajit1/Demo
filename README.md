@@ -5,17 +5,7 @@ private:
         n[0] = -1;
         int i = 0, pre = -1;
         int len = str.
-public:
-    int strStr(string haystack, string needle) {
-        if (0 == needle.length())
-            return 0;
-
-        vector<int> n(Next(needle));
-
-        int len = haystack.length() - needle.length() + 1;
-        for (int i = 0; i < len; ++i) {
-            int j = 0, k = i;
-            while (j < needle.length() && k < haystack.length()) {
+p() && k < haystack.length()) {
                 if (haystack[k] != needle[j]) {
                     if (n[j] >= 0) {
                         j = n[j];
