@@ -7,12 +7,7 @@ private:
         int len = str.
 p() && k < haystack.length()) {
                 if (haystack[k] != needle[j]) {
-                    if (n[j] >= 0) {
-                        j = n[j];
-                        continue;
-                    } else
-                        break;
-                }
+             
                 ++k, ++j;
             }
             if (j >= needle.length())
