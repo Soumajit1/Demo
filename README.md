@@ -1,19 +1,19 @@
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
 class Solution {
-private:
-    vector<int> Next(string str) {
-        vector<int> n(str.length());
-        n[0] = -1;
-        int i = 0, pre = -1;
-        int len = str.
-p() && k < haystack.length()) {
-                if (haystack[k] != needle[j]) {
-             
-                ++k, ++j;
-            }
-            if (j >= needle.length())
-                return k - j;
-        }
-
-        return -1;
+public:
+    bool isSameTree(TreeNode* p, TreeNode* q) {
+        if (p == q) return true;
+        if (!p || !q || p->val != q->val) return false;
+        return isSameTree(p->left, q->left) && isSameTree(p->right, q->right);
     }
 };
