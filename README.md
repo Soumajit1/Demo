@@ -4,14 +4,7 @@ private:
         vector<int> n(str.length());
         n[0] = -1;
         int i = 0, pre = -1;
-        int len = str.length();
-        whil
-            else
-                n[i] = pre;
-        }
-        return n;
-    }
-
+        int len = str.
 public:
     int strStr(string haystack, string needle) {
         if (0 == needle.length())
