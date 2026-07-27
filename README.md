@@ -8,7 +8,7 @@ private:
         while (i < len) {
             while (pre >= 0 && str[i] != str[pre])
                 pre = n[pre];
-            ++i, ++pre;
+      ++i, ++pre;
             if (i >= len)
                 break;
             if (str[i] == str[pre])
