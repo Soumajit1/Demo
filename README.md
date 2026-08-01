@@ -1,20 +1,4 @@
  */
-string convertToTitle(int columnNumber) {
-    // String to store the result
-    string result = "";
-  
-    // Continue until all digits are processed
-    while (columnNumber > 0) {
-        // Adjust to 0-indexed (A=0, B=1, ..., Z=25)
-        columnNumber--;
-        // Convert number to corresponding letter (0->A, 1->B, ..., 25->Z)
-        // 'A' + remainder gives us the correct character
-        char current_character = 'A' + remainder;
-      
-        // Add character to the beginning of the result string
-        result = current_character + result;
-      
-        // Move to the next digit position
         columnNumber = columnNumber / 26;
     }
   
