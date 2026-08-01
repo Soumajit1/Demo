@@ -1,4 +1,1 @@
- */
-        columnNumber = columnNumber / 26;
-    }
-  
+
