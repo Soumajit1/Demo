@@ -1,6 +1,4 @@
-
-39. Combination Sum
-40. class Solution {
+class Solution {
 public:
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
         sort(candidates.begin(), candidates.end());
