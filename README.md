@@ -1,5 +1,3 @@
-
-
 class Solution {
 public:
     string addBinary(string a, string b) {
@@ -12,4 +10,5 @@ public:
         }
         reverse(ans.begin(), ans.end());
         return ans;
-    
+    }
+};
