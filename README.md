@@ -1,5 +1,7 @@
 class Solution {
 public:
+    striclass Solution {
+public:
     string addBinary(string a, string b) {
         string ans;
         int i = a.size() - 1, j = b.size() - 1;
@@ -9,6 +11,9 @@ public:
             carry /= 2;
         }
         reverse(ans.begin(), ans.end());
+        return ans;
+    }
+};), ans.end());
         return ans;
     }
 };
