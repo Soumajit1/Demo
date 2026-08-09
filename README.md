@@ -4,12 +4,7 @@ public:
     /**
      * Performs inorder traversal of a binary tree
      * @param root - The root node of the binary tree
-     * @return A vector containing the values of nodes in inorder sequence
-     */
-    vector<int> inorderTraversal(TreeNode* root) {
-        // Vector to store the result of inorder traversal
-        vector<int> result;
-      
+     * @return A vector containing 
         // Lambda function for recursive depth-first search
         // Captures result vector by reference to modify it
         function<void(TreeNode*)> dfs = [&](TreeNode* node) {
