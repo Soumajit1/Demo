@@ -2,17 +2,7 @@ class Solution {
 public:
     vector<int> plusOne(vector<int>& digits) {
         // Iterate through digits from right to left (least significant to most significant)
-        for (int i = digits.size() - 1; i >= 0; --i) {
-            // Add 1 to the current digit
-            ++digits[i];
-          
-            // Handle carry by taking modulo 10
-            // If digit becomes 10, it will be set to 0
-            digits[i] %= 10;
-          
-            // If the digit is not 0, there's no carry to propagate
-            // We can return the result immediately
-            if (digits[i] != 0) {
+        for (int i =) {
                 return digits;
             }
           
