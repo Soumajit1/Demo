@@ -7,6 +7,4 @@ public:
             a = b;
             b = c;
         }
-        return b;
-    }
-};
+       
